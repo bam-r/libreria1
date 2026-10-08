@@ -216,3 +216,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+#frontend
+
+node_modules/
+#guarda todas las dependencias que usara mi proyecto
+#al clonar se descargan con npm install
+build/
+# carpeta que se genera al compilar
+dist/
+# carpeta que se genera al compilar

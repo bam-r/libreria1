@@ -1,7 +1,9 @@
+#primer paso para constuir una api rest, definimos los modelos que migraremos a la base de datos
+
 from django.db import models
 
 class Director(models.Model):
-    nombre = models.CharField(max_length=50, Unique = True)
+    nombre = models.CharField(max_length=50, unique = True)
     birth_year = models.IntegerField()
     nacionalidad = models.CharField(max_length=50)
 

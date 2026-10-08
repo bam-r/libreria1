@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    #libreria
+    'rest_framework'
+
     #apps
     'peliculas'
 ]
@@ -77,8 +80,13 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'user',
+        'PASSWORD': 'user',
+        'HOST':'localhost',
+        'PORT':'5432'
+
     }
 }
 
